@@ -1,11 +1,15 @@
 // import { useState } from 'react'
 // import './App.css'
+import Chai from './chai.jsx'
 
 function App() {
 
 
   return (
-       <h1>Chai React with Vite </h1>
+    <>
+      <Chai/>
+      <h1>Chai React</h1>
+    </>
   )
 }
 

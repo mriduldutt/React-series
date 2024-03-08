@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client'; //implitation of React
 // import './index.css';
 import App from './App';
 
@@ -11,3 +11,4 @@ root.render(
 );
 
 
+//React creates own DOM : Virtual DOM
