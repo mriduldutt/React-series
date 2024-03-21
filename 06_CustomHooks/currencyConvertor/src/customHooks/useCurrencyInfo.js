@@ -1,17 +1,16 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 
-// export  default  useCurrencyInfo = (currency) => {
-//     const[data,setData] = useState({})
-//     useEffect(() => {
-//          fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
-//          .then((res)=>{
-//               res.json();
-//          }).then((res)=>{
-//              setData(res[currency]);
-//          })
-//      },[currency]);
+function useCurrencyInfo(currency){
+    const[data,setData] = useState({})
+    useEffect(() => {
+         fetch(`https://api.exchangerate-api.com/v4/latest/${currency}.json`)
+         .then((res)=>res.json())
+         .then((res)=>setData(res[4]))
+     },[currency]);
 
-//      console.log(data);
-//      return data;
-// }
+     console.log(data);
+     return data;
+}
+
+export default useCurrencyInfo;

@@ -1,5 +1,5 @@
 
-import InputBox from './InputBox'
+import InputBox from './InputBox.jsx'
 
 
 export {InputBox}
